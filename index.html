@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="dark">
 <head>
-  <!-- Meta tags permanecem iguais -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfólio de Erick Barbosa - Engenheiro de Software Sênior especializado em desenvolvimento de ERPs">
@@ -12,114 +11,93 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <!-- Nav permanece igual -->
-    <nav>
-      <a href="#" class="nav-brand">
-        <i class="fas fa-code"></i>
-        Erick Barbosa
-      </a>
-      <div class="nav-links">
-        <a href="#sobre" class="nav-link">Sobre</a>
-        <!-- <a href="#erp" class="nav-link">ERP Solutions</a> -->
-        <a href="#features" class="nav-link">Funcionalidades</a>
-        <a href="#demo" class="nav-link">Demo</a>
-       
+  <a class="skip-link" href="#main">Pular para o conteúdo principal</a>
+
+  <!-- Cabeçalho -->
+  <header class="header">
+    <nav class="nav container">
+      <div class="nav__container">
+        <a href="#sobre" class="nav__brand">
+          <i class="fas fa-code nav__icon"></i>
+          <span class="nav__logo-text">Erick Barbosa</span>
+        </a>
+  
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#sobre" class="nav__link">Sobre</a></li>
+            <li class="nav__item"><a href="#features" class="nav__link">Funcionalidades</a></li>
+            <li class="nav__item"><a href="#demo" class="nav__link">Demo</a></li>
+            <li class="nav__item"><a href="#contato" class="nav__link">Contato</a></li>
+          </ul>
+        </div>
+  
+        <button class="nav__toggle" aria-label="Menu">
+          <span class="toggle__line"></span>
+          <span class="toggle__line"></span>
+          <span class="toggle__line"></span>
+        </button>
       </div>
     </nav>
   </header>
 
-  <main>
-    <!-- Seção Sobre corrigida -->
-    
-
+  <!-- Conteúdo Principal -->
+  <main id="main">
+    <!-- Seção Hero -->
     <section class="hero">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1 class="hero-title">
-            Transformando <span class="hero-highlight">E-commerce</span> através de
-            <span class="hero-highlight">Engenharia de Software</span>
+      <div class="hero__content container">
+        <div class="hero__text">
+          <h1 class="hero__title">
+            Transformando <span class="highlight">E-commerce</span> através de
+            <span class="highlight">Engenharia de Software</span>
           </h1>
-          <p class="hero-subtitle">
-            ERP integrado para gestão multinível em marketplaces globais. 
+          <p class="hero__subtitle">
+            ERP integrado para gestão multinível em marketplaces globais.<br>
             Solução completa desde controle de estoque até análise financeira preditiva.
           </p>
-          <div class="hero-cta">
-            <a href="#demo" class="btn btn-primary">
-              <i class="fas fa-play"></i>
+          <div class="hero__cta">
+            <a href="#demo" class="btn btn--primary">
+              <i class="fas fa-play btn__icon"></i>
               Ver Demo
             </a>
-            <a href="mailto:erickbsasaki@gmail.com?subject=Contato do Portfólio&body=Olá Erick,%0A%0AGostaria de fazer um orçamento" class="btn btn-secondary">
-              <i class="fas fa-envelope"></i>
+            <a href="mailto:erickbsasaki@gmail.com" class="btn btn--secondary">
+              <i class="fas fa-envelope btn__icon"></i>
               Contato
             </a>
           </div>
         </div>
-        <div class="hero-visual">
-          <img src="img/image.png" alt="ERP Dashboard Preview" class="hero-image">
+        <div class="hero__visual">
+          <img src="img/image.png" alt="Dashboard do ERP" class="hero__image" loading="lazy">
         </div>
       </div>
     </section>
 
-
-
-
-
-    <section id="sobre" class="about-section">
-      <div class="about-container">
-        <div class="about-content">
-          <h2 class="section-title">Sobre Mim</h2>
-          <div class="about-bio">
-            <div class="text-content">
-              <p class="about-text">
-                Olá, meu nome é <strong>Erick Barbosa</strong>, tenho <span id="idade">27</span> anos. 
-                Sou formado em <strong>Engenharia da Computação e Engenharia de Software</strong> e 
-                atuo como desenvolvedor web/engenheiro de software há quase 7 anos. 
-                Minha especialidade é criar processos gerenciais dentro de ambientes de software, 
-                permitindo que toda a experiência do ERP seja personalizada para atender 
-                às necessidades específicas de cada cliente.
-              </p>
-            
-              <p class="about-text">
-                Voltado para e-commerce, meu software busca inovar o mercado trazendo 
-                facilidade na alimentação de dados, com análises realizadas por uma 
-                inteligência artificial de construção própria. Seu aprendizado de 
-                máquina adapta-se dinamicamente às necessidades da empresa, oferecendo 
-                uma solução verdadeiramente flexível e escalável.
-              </p>
-            
-              <p class="about-text">
-                Com mais de <strong>7 anos de experiência</strong> no desenvolvimento de sistemas web, atuo como <strong>Engenheiro de Software Sênior</strong>, criando soluções ERP integradas para e-commerces, otimizando sua performance nos principais marketplaces globais.
-              </p>
-            </div>
-
-            <div class="experience-sidebar">
-              <div class="experience-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Microsoft_icon.svg/2048px-Microsoft_icon.svg.png" alt="Microsoft" class="company-logo">
-                <div class="overlay">
-                
-                </div>
+    <!-- Seção Sobre -->
+    <section id="sobre" class="about section-padding">
+      <div class="container">
+        <h2 class="section__title">Sobre Mim</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p class="about__description">
+              Olá, sou <strong>Erick Barbosa</strong>, Engenheiro de Software com 7 anos de experiência no desenvolvimento de sistemas Web com modelagem de processos. Formado em Engenharia da Computação e Engenharia de Software, meu foco é criar soluções personalizadas que integram inteligência artificial e automação processos.
+            </p>
+            <p class="about__description">
+              Minha especialidade é desenvolver sistemas de gestão empresarial que se adaptam dinamicamente às necessidades dos clientes, combinando análise preditiva com segurança de nível bancário.
+            </p>
+          </div>
+          
+          <div class="about__experience">
+            <div class="experience__grid">
+              <div class="experience__card">
+                <img src="https://registry.npmmirror.com/@lobehub/icons-static-png/1.44.0/files/dark/microsoft-color.png" alt="Microsoft" class="experience__logo">
               </div>
-              
-              <div class="experience-card">
-                <img src="https://cdn.worldvectorlogo.com/logos/nubank-3.svg" alt="Nubank" class="company-logo">
-                <div class="overlay">
-                
-                </div>
+              <div class="experience__card">
+                <img src="https://cdn.worldvectorlogo.com/logos/nubank-3.svg" alt="Nubank" class="experience__logo">
               </div>
-              
-              <div class="experience-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Ita%C3%BA_Unibanco_logo_2023.svg/2048px-Ita%C3%BA_Unibanco_logo_2023.svg.png" alt="Itaú" class="company-logo">
-                <div class="overlay">
-             
-                </div>
+              <div class="experience__card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Ita%C3%BA_Unibanco_logo_2023.svg/2048px-Ita%C3%BA_Unibanco_logo_2023.svg.png" alt="Itaú" class="experience__logo">
               </div>
-              
-              <div class="experience-card">
-                <img src="https://cdn-images-1.medium.com/v2/resize:fit:1200/1*-j0XSCeNMx6IhgwBp0idOw.png" alt="AmbevTech" class="company-logo">
-                <div class="overlay">
-               
-                </div>
+              <div class="experience__card">
+                <img src="https://yt3.googleusercontent.com/ytc/AIdro_lTx3lHfnEMKWV6gdlqDzlaDB_4pK69-XrjnJPQRoVwqlQ=s900-c-k-c0x00ffffff-no-rj" alt="Ambev" class="experience__logo">
               </div>
             </div>
           </div>
@@ -127,114 +105,114 @@
       </div>
     </section>
 
-    <section id="features" class="features-section">
-      <h2 class="section-title">Funcionalidades Avançadas</h2>
-      <br>
-      <div class="features-grid">
-        <article class="feature-card">
-          <i class="fas fa-chart-line feature-icon"></i>
-          <h3 class="feature-title">Análise Preditiva</h3>
-          <p class="feature-description">
-            Machine learning para previsão de demanda e otimização de estoque
-          </p>
-          <ul class="feature-list">
-            <li>Analise de dados personalizada</li>
-            <li>Projeção sazonal personalizada</li>
-          </ul>
-        </article>
+    <!-- Seção Funcionalidades -->
+    <section id="features" class="features section-padding">
+      <div class="container">
+        <h2 class="section__title">Funcionalidades Avançadas</h2>
+        <div class="features__grid">
+          <article class="feature__card">
+            <i class="fas fa-chart-line feature__icon"></i>
+            <h3 class="feature__title">Análise Preditiva</h3>
+            <ul class="feature__list">
+              <li>Previsão de demanda inteligente</li>
+              <li>Projeções financeiras sazonais</li>
+            </ul>
+          </article>
 
-        <article class="feature-card">
-          <i class="fas fa-robot feature-icon"></i>
-          <h3 class="feature-title">Automação Multiplataforma</h3>
-          <p class="feature-description">
-            Integração simultânea com Shopee, Mercado Livre e Amazon
-          </p>
-          <ul class="feature-list">
-            <li>Sincronização em tempo real</li>
-            <li>Gestão centralizada</li>
-          </ul>
-        </article>
+          <article class="feature__card">
+            <i class="fas fa-robot feature__icon"></i>
+            <h3 class="feature__title">Automação Integrada</h3>
+            <ul class="feature__list">
+              <li>Sincronização entre marketplaces</li>
+              <li>Gestão de pedidos centralizada</li>
+              <li>Atualizações em tempo real venda a venda</li>
+            </ul>
+          </article>
 
-        <article class="feature-card">
-          <i class="fas fa-shield-alt feature-icon"></i>
-          <h3 class="feature-title">Segurança Empresarial</h3>
-          <p class="feature-description">
-            Arquitetura Zero Trust com criptografia ponta-a-ponta
-          </p>
-          <ul class="feature-list">
-            <li>2FA para todas as transações</li>
-            <li>Backup automático diário</li>
-          </ul>
-        </article>
+          <article class="feature__card">
+            <i class="fas fa-shield-alt feature__icon"></i>
+            <h3 class="feature__title">Segurança Total</h3>
+            <ul class="feature__list">
+              <li>Criptografia ponta-a-ponta</li>
+              <li>Autenticação de dois fatores</li>
+              <li>Backups automatizados</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="demo" class="demo-section">
-      <div class="demo-container">
-        <h2 class="section-title">Experimente Nossa Plataforma</h2>
-        <iframe 
-          src="https://hanzosasaki.github.io/Apresentacao/" 
-          class="demo-iframe"
-          loading="lazy"
-          title="ERP Demo"
-        ></iframe>
+    <!-- Seção Demo -->
+    <section id="demo" class="demo section-padding">
+      <div class="container">
+        <h2 class="section__title">Demonstração Interativa</h2>
+        <div class="demo__container">
+          <iframe 
+            src="https://hanzosasaki.github.io/Apresentacao/" 
+            class="demo__iframe"
+            title="Demonstração do Sistema ERP"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3>ERP Wolfsoftware</h3>
-        <nav>
-          <ul class="footer-links">
-            <li><a href="#features" class="footer-link">Todos os direitos do softwares são reservados para Erick Barbosa</a></li>
-        
-          </ul>
-        </nav>
-      </div>
-      <div class="footer-section">
-        <h3>Contato</h3>
-        <ul class="footer-links">
-          <li><a href="mailto:contato@erickbarbosa.com" class="footer-link">erickbsasaki@gmail.com</a></li>
-          <li><a href="tel:+5511999999999" class="footer-link">+55 15 9117-4127</a></li>
-        </ul>
-        <div class="social-links">
-          <!-- <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a> -->
+  <!-- Rodapé -->
+  <footer id="contato" class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__section">
+          <h3 class="footer__title">ERP Wolfsoftware</h3>
+          <p class="footer__text">
+            Soluções completas em gestão empresarial<br>
+            Desenvolvido com tecnologia de ponta
+          </p>
         </div>
+
+        <div class="footer__section">
+          <h3 class="footer__title">Contato</h3>
+          <ul class="footer__list">
+            <li><a href="mailto:erickbsasaki@gmail.com" class="footer__link">
+              <i class="fas fa-envelope"></i> erickbsasaki@gmail.com
+            </a></li>
+            <li><a href="tel:+551591174127" class="footer__link">
+              <i class="fas fa-phone"></i> +55 15 9117-4127
+            </a></li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <!-- <h3 class="footer__title">Redes Sociais</h3> -->
+          <div class="social__links">
+            <!-- <a href="#" class="social__link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="social__link" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social__link" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i> -->
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2024 Erick Barbosa. Todos os direitos reservados.
+        </p>
       </div>
     </div>
   </footer>
 
-  <script>
-    // Sistema de Tema Dinâmico
-    const themeToggle = document.createElement('button');
-    themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-    themeToggle.style.position = 'fixed';
-    themeToggle.style.bottom = '2rem';
-    themeToggle.style.right = '2rem';
-    themeToggle.classList.add('btn', 'btn-secondary');
-    document.body.appendChild(themeToggle);
+  <!-- Botão de Tema -->
+  <button class="theme-toggle btn btn--secondary" aria-label="Alternar tema">
+    <i class="fas fa-moon theme-toggle__icon"></i>
+  </button>
 
-    themeToggle.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', newTheme);
-      themeToggle.innerHTML = newTheme === 'dark' ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
-    });
-
-    // Observador de Intersecção para Animação
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.feature-card, .demo-container').forEach(el => observer.observe(el));
-  </script>
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
